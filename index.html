@@ -161,6 +161,22 @@
     </section>
 
     <section class="general-info">
+      <div class="general-info-photos">
+        <img class="general-info-photos-mountains" src="./icons/general_info_mountains.svg" alt="mountains" />
+        <div class="general-info-photos-label first">
+          <span class="general-info-photos-label-big-text">300+</span>
+          <span class="general-info-photos-label-small-text">DESTINATIONS</span>
+        </div>
+        <div class="general-info-photos-label second">
+          <span class="general-info-photos-label-big-text">5000+</span>
+          <span class="general-info-photos-label-small-text">TOURISTS</span>
+        </div>
+        <div class="general-info-photos-label third">
+          <span class="general-info-photos-label-big-text">150+</span>
+          <span class="general-info-photos-label-small-text">HOTELS</span>
+        </div>
+      </div>
+
       <div class="general-info-text">
         <h2 class="general-info-heading">
           Travel Any Corner of The World With Us
@@ -175,34 +191,12 @@
         </p>
         <button class="general-info-button">Contact Us</button>
       </div>
-
-      <div class="general-info-photos">
-        <img class="general-info-photos-mountains" src="./icons/general_info_mountains.svg" alt="mountains" />
-        <div class="general-info-photos-label">
-          <img class="general-info-photos-label-background" src="./icons/rectangle_general_info.svg"
-            alt="white rectangle" />
-          <span class="general-info-photos-label-big-text">300+</span>
-          <span class="general-info-photos-label-small-text">DESTINATIONS</span>
-        </div>
-        <div class="general-info-photos-label">
-          <img class="general-info-photos-label-background" src="./icons/rectangle_general_info.svg"
-            alt="white rectangle" />
-          <span class="general-info-photos-label-big-text">5000+</span>
-          <span class="general-info-photos-label-small-text">TOURISTS</span>
-        </div>
-        <div class="general-info-photos-label">
-          <img class="general-info-photos-label-background" src="./icons/rectangle_general_info.svg"
-            alt="white rectangle" />
-          <span class="general-info-photos-label-big-text">150+</span>
-          <span class="general-info-photos-label-small-text">HOTELS</span>
-        </div>
-      </div>
     </section>
 
     <section class="recommendations">
       <h2 class="recommendations-heading">Recommended Destination</h2>
       <div class="recommendations-tab">
-        <button class="recommendations-tablink">Popular</button>
+        <button class="recommendations-tablink active">Popular</button>
         <button class="recommendations-tablink">Adventure</button>
         <button class="recommendations-tablink">Beath</button>
       </div>
@@ -283,69 +277,72 @@
     </section>
 
     <section class="reviews">
-      <article class="review">
-        <main class="review-main">
-          <!-- <img class="review-main-bg" src="./icons/review_background.svg" alt="white rectangle" /> -->
-          <img class="review-main-quotes" src="./icons/quote.svg" alt="quotes" />
-          <p class="review-main-text">
-            Our trip to Morocco was truly a onece in a lifetime experience and
-            we are so grateful to everyone that made it happen seamlessly. Our
-            travel planner, Jaouad, was increadible.
-          </p>
-          <span class="review-main-name">-Vand D</span>
-          <span class="review-main-label">Happy Treloo</span>
-        </main>
-        <footer class="review-footer">
-          <img class="review-footer-bg" src="./icons/avatar_bg.svg" alt="white elipse" />
-          <img class="review-footer-avatar" src="./icons/girl_avatar.svg" alt="avatar" />
-          <div class="review-footer-rating">
-            <img class="review-footer-rating-bg" src="./icons/review_rating_bg.svg" alt="white rectangle" />
-            <img class="review-footer-rating-star" src="./icons/Star.svg" alt="star" />
-            <span class="review-footer-rating-text">4.5</span>
-          </div>
-        </footer>
-      </article>
-
-      <article class="review">
-        <main class="review-main">
-          <img class="review-main-bg" src="./icons/review_background.svg" alt="white rectangle" />
-          <img class="review-main-quotes" src="./icons/quote.svg" alt="quotes" />
-          <p class="review-main-text">
-            Our trip to Morocco was truly a onece in a lifetime experience and
-            we are so grateful to everyone that made it happen seamlessly. Our
-            travel planner, Jaouad, was increadible.
-          </p>
-          <span class="review-main-name">-Tru Vio</span>
-          <span class="review-main-label">Happy Treloo</span>
-        </main>
-        <footer class="review-footer">
-          <img class="review-footer-bg" src="./icons/avatar_bg.svg" alt="white elipse" />
-          <img class="review-footer-avatar" src="./icons/boy_avatar.svg" alt="avatar" />
-          <div class="review-footer-rating">
-            <img class="review-footer-rating-bg" src="./icons/review_rating_bg.svg" alt="white rectangle" />
-            <img class="review-footer-rating-star" src="./icons/Star.svg" alt="star" />
-            <span class="review-footer-rating-text">4.9</span>
-          </div>
-        </footer>
-        <nav class="review-nav">
-          <img class="review-nav-bg" src="./icons/review_navigation_bg.svg" alt="rectangle" />
-          <img class="review-nav-bg" src="./icons/review_navigation_bg.svg" alt="rectangle" />
-          <img class="review-nav-left" src="./icons/review_nav_left.svg" alt="left arrow" />
-          <img class="review-nav-right" src="./icons/review_nav_right.svg" alt="right arrow" />
-        </nav>
-      </article>
+      <div class="review-container">
+        <article class="review">
+          <main class="review-main">
+            <!-- <img class="review-main-bg" src="./icons/review_background.svg" alt="white rectangle" /> -->
+            <img class="review-main-quotes" src="./icons/quote.svg" alt="quotes" />
+            <p class="review-main-text">
+              Our trip to Morocco was truly a onece in a lifetime experience and
+              we are so grateful to everyone that made it happen seamlessly. Our
+              travel planner, Jaouad, was increadible.
+            </p>
+            <span class="review-main-name">-Vand D</span>
+            <span class="review-main-label">Happy Treloo</span>
+          </main>
+          <footer class="review-footer">
+            <img class="review-footer-avatar" src="./icons/girl_avatar.svg" alt="avatar" />
+            <div class="review-footer-rating">
+              <img class="review-footer-rating-star" src="./icons/Star.svg" alt="star" />
+              <span class="review-footer-rating-text">4.5</span>
+            </div>
+          </footer>
+        </article>
+  
+        <article class="review">
+          <main class="review-main">
+            <img class="review-main-quotes" src="./icons/quote.svg" alt="quotes" />
+            <p class="review-main-text">
+              Our trip to Morocco was truly a onece in a lifetime experience and
+              we are so grateful to everyone that made it happen seamlessly. Our
+              travel planner, Jaouad, was increadible.
+            </p>
+            <span class="review-main-name">-Tru Vio</span>
+            <span class="review-main-label">Happy Treloo</span>
+          </main>
+          <footer class="review-footer">
+            <img class="review-footer-avatar" src="./icons/boy_avatar.svg" alt="avatar" />
+            <div class="review-footer-rating">
+              <img class="review-footer-rating-star" src="./icons/Star.svg" alt="star" />
+              <span class="review-footer-rating-text">4.9</span>
+            </div>
+          </footer>
+        </article>
+      </div>
+      <nav class="review-nav">
+          <button class="review-nav-button">
+            <img class="review-nav-left" src="./icons/review_nav_left.svg" alt="left arrow" />
+          </button>
+          <button class="review-nav-button">
+            <img class="review-nav-right" src="./icons/review_nav_right.svg" alt="right arrow" />
+          </button>
+      </nav>
     </section>
 
     <section class="discount">
-      <img class="discount-bg-img" src="./icons/discount_bg.svg" alt="planet" />
-      <h2 class="discount-heading">
-        Don’t Miss The 50% Discount if You register Today
-      </h2>
-      <button class="discount-button">Register Today</button>
+      <div class="discount-img-container">
+        <img class="discount-bg-img" src="./icons/discount_bg.svg" alt="planet" />
+      </div>
+      <div class="discount-content-container">
+        <h2 class="discount-heading">
+          Don’t Miss The 50% Discount if You register Today
+        </h2>
+        <button class="discount-button">Register Today</button>
+      </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <span class="footer-text">© 2022 Treloo LLC - All right reserved.</span>
     <nav class="footer-nav">
       <a class="footer-link" href="#">Review</a>
