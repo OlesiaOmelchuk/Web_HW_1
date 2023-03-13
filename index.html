@@ -28,11 +28,13 @@
 
   <main>
     <section class="banner">
-      <h1 class="banner-header">Discover Your Life, Travel Where You Want</h1>
-      <p class="banner-text">
-        Would you explore nature paradise in the world, let’s find the best
-        destination in world with us.
-      </p>
+      <div class="banner-text-container">
+        <h1 class="banner-header">Discover Your Life, Travel Where You Want</h1>
+        <p class="banner-text">
+          Would you explore nature paradise in the world, let’s find the best
+          destination in world with us.
+        </p>
+      </div>
 
       <div class="search-bar">
         <div class="search-bar-tab">
@@ -44,45 +46,52 @@
           </button>
         </div>
 
-        <div class="search-bar-place">
-          <img class="search-bar-place-rectangle" src="./icons/rectangle_search_bar_1.svg" alt="background rectangle" />
+        <div class="search-bar-main">
+          <div class="search-bar-place">
+            <div class="search-bar-place-container">
+              <label class="search-bar-place-heading" for="place-from">Living From</label>
+              <select id="place-from">
+                <option value="lviv">Lviv</option>
+                <option value="london">London</option>
+                <option value="paris">Paris</option>
+              </select>
+            </div>
 
-          <label class="search-bar-place-heading" for="place-from">Living From</label>
-          <select id="place-from">
-            <option value="lviv">Lviv</option>
-            <option value="london">London</option>
-            <option value="paris">Paris</option>
-          </select>
-          <label class="search-bar-place-heading" for="place-to">Going to</label>
-          <select id="place-from">
-            <option value="lviv">Lviv</option>
-            <option value="london">London</option>
-            <option value="paris">Paris</option>
-          </select>
+            <img class="search-bar-place-airplane-icon" src="./icons/airplane_grey.svg" alt="airplane" />
+            <!-- <img class="search-bar-place-elipse-icon" src="./icons/ellipse_airplane_calendar.svg" alt="elipse" /> -->
 
-          <img class="search-bar-place-airplane-icon" src="./icons/airplane_grey.svg" alt="airplane" />
-          <img class="search-bar-place-elipse-icon" src="./icons/ellipse_airplane_calendar.svg" alt="elipse" />
+            <div class="search-bar-place-container">
+              <label class="search-bar-place-heading" for="place-to">Going to</label>
+              <select id="place-from">
+                <option value="lviv">Lviv</option>
+                <option value="london">London</option>
+                <option value="paris">Paris</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="search-bar-date">
+            <div class="search-bar-date-container">
+              <label class="search-bar-date-leave" for="leave-date">Leave<img class="search-bar-date-leave-icon"
+                src="./icons/leave_airplane.svg" alt="leaving airplane" /></label>
+            <input type="date" id="leaving-date" />
+            </div>
+
+            <img class="search-bar-date-calendar-icon" src="./icons/calendar.svg" alt="calendar" />
+            <!-- <img class="search-bar-date-elipse_icon" src="./icons/ellipse_airplane_calendar.svg" alt="elipse" /> -->
+
+            <div class="search-bar-date-container">
+              <label class="search-bar-date-return" for="return-date">Return<img class="search-bar-date-return-icon"
+                src="./icons/return_airplane.svg" alt="returning airplane" /></label>
+            <input type="date" id="return-date" />
+            </div>
+          </div>
+
+          <button class="search-bar-button">
+            <img class="search-bar-button-icon" src="./icons/ellipse_find_part_1.svg" alt="search button" /><img
+              class="search-bar-button-icon" src="./icons/line_find_part_2.svg" alt="search button" />
+          </button>
         </div>
-
-        <div class="search-bar-date">
-          <img class="search-bar-date-rectangle" src="./icons/rectangle_search_bar_2.svg" alt="bakcground rectangle" />
-
-          <label class="search-bar-date-leave" for="leave-date">Leave<img class="search-bar-date-leave-icon"
-              src="./icons/leave_airplane.svg" alt="leaving airplane" /></label>
-          <input type="date" id="leaving-date" />
-          <label class="search-bar-date-return" for="return-date">Return<img class="search-bar-date-return-icon"
-              src="./icons/return_airplane.svg" alt="returning airplane" /></label>
-          <input type="date" id="return-date" />
-
-          <img class="search-bar-date-calendar-icon" src="./icons/calendar.svg" alt="calendar" />
-          <img class="search-bar-date-elipse_icon" src="./icons/ellipse_airplane_calendar.svg" alt="elipse" />
-        </div>
-
-        <button class="search-bar-button">
-          <img class="search-bar-button-icon" src="./icons/ellipse_find_part_1.svg" alt="search button" /><img
-            class="search-bar-button-icon" src="./icons/line_find_part_2.svg" alt="search button" /><img
-            class="search-bar-button-icon" src="./icons/rectangle_find_part_3.svg" alt="search button" />
-        </button>
       </div>
     </section>
 

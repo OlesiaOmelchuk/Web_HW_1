@@ -1,8 +1,164 @@
 body {
     background-color: #E5E5E5;
     font-family: 'Poppins', sans-serif;
-    /* padding-left: 130px;
-    padding-right: 130px; */
+    /* padding-left: 100px;
+    padding-right: 100px; */
+}
+
+.background-img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    margin: 0;
+    left: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 100px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header-link {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.header-button {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #3E86F5;
+    padding: 14px 44px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-text-container {
+    gap: 40px;
+    margin: 232px 200px 140px 200px;
+}
+
+.banner-header {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 96px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.banner-text {
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.search-bar {
+}
+
+.search-bar-tab, .search-bar-main {
+    background-color: #FFFFFF;
+}
+
+.search-bar-tab {
+    display: flex;
+    justify-self: left;
+    width: 280px;
+    justify-content: space-around;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.search-bar-tab-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.search-bar-tablink {
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #000000;
+    padding: 15px 20px;
+}
+
+.search-bar-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 31px;
+    padding: 60px 48px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: center;
+    color: #00000080;
+    /* box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1); */
+    border-radius: 0px 50px 50px 50px;
+}
+
+.search-bar-place, .search-bar-date {
+    display: flex;
+    border: 2px solid rgba(172, 172, 172, 0.5);
+    border-radius: 25px;
+    padding: 44px 22px;
+    gap: 22px;
+}
+
+.search-bar-place-container, .search-bar-date-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    align-items: baseline;
+}
+
+.search-bar-date-leave, .search-bar-date-return {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-place-airplane-icon, .search-bar-date-calendar-icon{
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    padding: 4px;
+}
+
+.search-bar-button {
+    position: relative;
+    border: 0;
+    background-color: #3E86F5CC;
+    width: 154px;
+    height: 154px;
+    border-radius: 65px;
+}
+
+.search-bar-button-icon {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .special-offers-tab {
