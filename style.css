@@ -561,7 +561,7 @@ body {
 
 .review-footer {
     position: relative;
-    /* top: 55px; */
+    margin-top: -40px;
 }
 
 .review-footer-avatar {
@@ -585,7 +585,7 @@ body {
 .review-footer-rating-text {
     font-size: 12px;
     font-weight: 500;
-    color: #00000080;
+    color: #000000;
 }
 
 .review-nav {
@@ -607,10 +607,6 @@ body {
 }
 
 .discount {
-    border: #F178B6 solid;
-    /* width: 100%;
-    height: fit-content; */
-    /* width: fit-content; */
     position: relative;
     margin-top: 136px;
     display: flex;
@@ -624,25 +620,6 @@ body {
     border-radius: 130px;
 }
 
-.discount-bg-img {
-    /* width: 100%; */
-    object-fit: fill;
-}
-
-.discount-img-container {
-    position: relative;
-    border: #F178B6 solid;
-    width: 100%;
-}
-
-.discount-content-container {
-    /* position: absolute; */
-    /* max-height: 100%;
-    top: 114px;
-    left: 50%; */
-    /* transform: translate(-50%, 0); */
-}
-
 .discount-heading {
     text-align: center;
     font-size: 48px;
@@ -653,9 +630,6 @@ body {
 }
 
 .discount-button {
-    /* position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0); */
     font-size: 20px;
     font-weight: 500;
     color: #3E86F5;
