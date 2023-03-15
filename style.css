@@ -83,8 +83,9 @@ body {
     display: flex;
     justify-self: left;
     width: 280px;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: 25px 25px 0px 0px;
+    padding: 10px;
 }
 
 .search-bar-tab-container {
@@ -116,6 +117,7 @@ body {
 .search-bar-main {
     width: fit-content;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     gap: 31px;
@@ -135,6 +137,7 @@ body {
     border-radius: 25px;
     padding: 44px 22px;
     gap: 22px;
+    height: 100%;
 }
 
 .search-bar-place-container, .search-bar-date-container {
@@ -152,12 +155,13 @@ body {
 
 .search-bar-place-airplane-icon, .search-bar-date-calendar-icon{
     border: 1px dashed rgba(0, 0, 0, 0.5);
-    border-radius: 100%;
-    padding: 4px;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    padding: 5px;
 }
 
 .search-bar-button {
-    position: relative;
     border: 0;
     background-color: #3E86F5CC;
     width: 154px;
@@ -166,9 +170,7 @@ body {
 }
 
 .search-bar-button-icon {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
+    width: 50%
 }
 
 .special-offers-tab {
